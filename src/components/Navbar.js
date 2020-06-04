@@ -7,24 +7,26 @@ import logo from "./logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="nav">
+    <nav id="navbar" className="">
+    <div className="nav-wrapper">
+
+      <div className="logo">
       <Link to="/" className="navbar-brand">
         <img src={logo} height="100" />
       </Link>
-      <ul className="navbar">
-        <li className="nav-item">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/cart">My cart</Link>
-        </li>
-        <li >
-          <Link to="/cart">
+      </div>
+  
+      <ul id="menu">
+        <li></li>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/cart">My cart</Link></li>
+    <Link to="/cart">
             <i className="material-icons">shopping_cart</i>
           </Link>
-        </li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+
   );
 };
 
