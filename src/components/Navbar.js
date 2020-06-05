@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import MaterialIcon from "@material/react-material-icon";
 import "@material/react-material-icon/dist/material-icon.css";
 import "./Navbar.css";
 import logo from "./logo.png";
-import Counter from './counter'
 
 class Navbar extends Component {
 
@@ -28,8 +27,11 @@ class Navbar extends Component {
               <Link to="/cart">My cart</Link>
             </li>
             <li>
+            <span className='counter'>{this.props.clickValue}</span>
+            </li>
+            <li>
               <Link to="/cart">
-                <i className="material-icons">shopping_cart</i>
+              <i className="material-icons">shopping_cart</i>
               </Link>
             </li>
           </ul>

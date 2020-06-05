@@ -109,3 +109,10 @@ a {
     margin-right: 50px;
     margin-top: -6px;
 }
+.counter {
+	color: #0080ff;
+	font-size: 25px;
+	position: absolute;
+	top: 40px;
+	right:  120px;
+}

@@ -1,0 +1,29 @@
+.minute {
+  font-size: 35px;
+  color: #0080ff;
+  font-family: monospace;
+}
+.minutes {
+  background-color: #0080ff;
+  color: white;
+  font-size: 35px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+.second {
+  font-size: 35px;
+  color: #0080ff;
+  font-family: monospace;
+}
+.seconds {
+  background-color: #0080ff;
+  color: white;
+  font-size: 35px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+.colon {
+  font-size: 35px;
+  color: #1034a6;
+  font-family: monospace;
+}

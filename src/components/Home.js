@@ -1,8 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "./actions/cartActions";
 import "./Home.css";
-import Counter from "./counter";
+import Countdown from "./Countdown"
+import Navbar from "./Navbar"
+
 
 class Home extends Component {
   state = {
@@ -12,8 +14,9 @@ class Home extends Component {
   handleClick = (id) => {
     this.props.addToCart(id);
   };
-
+  
   render() {
+
     let itemList = this.props.items.map((item) => {
       return (
         <div className="product-card" key={item.id}>
@@ -34,9 +37,9 @@ class Home extends Component {
             </span>
             <p>{item.desc}</p>
             <div className="product-bottom-details">
-              <div className="product-price">{item.price}</div>
+              <div className="product-price">${item.price}</div>
               <div className="product-links">
-                <i className="fa fa-heart"></i>
+        
               </div>
             </div>
           </div>
@@ -45,10 +48,10 @@ class Home extends Component {
     });
     return (
       <div className="container">
+          <Navbar clickValue={this.state.clickValue}></Navbar>
         <span className="counter">
-          <Counter clickValue={this.state.clickValue}></Counter>
         </span>
-        <h3 className="center">Our items</h3>
+        <h3 className="center">FL⚡SH SALE :<Countdown /></h3>
         <div className="box">{itemList}</div>
       </div>
     );

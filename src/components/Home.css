@@ -78,12 +78,10 @@
 .product-links a:hover {
     color: #fbb72c;
 }
-.counter {
-    color: #0080ff;
-    position: absolute;
-    top: 20px;
-    right: 43px;
-    z-index: 1;
-    position: fixed;
-    font-size: 20px;
+
+.container {
+    margin-top: 200px;
+}
+.center {
+    font-size: 35px;
 }
